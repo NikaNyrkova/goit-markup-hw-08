@@ -1,0 +1,45 @@
+html {
+  box-sizing: border-box;
+}
+
+*,
+*::before,
+*::after {
+  box-sizing: inherit;
+}
+
+body {
+  font-family: "Roboto", sans-serif;
+  font-size: 14px;
+  line-height: 1.67;
+  letter-spacing: 0.03em;
+  color: $main-text-color;
+}
+
+.container {
+  width: 1200px;
+  padding-left: 15px;
+  padding-right: 15px;
+  margin-left: auto;
+  margin-right: auto;
+}
+
+.image-block {
+  display: block;
+  max-width: 100%;
+  height: auto;
+}
+
+.link {
+  text-decoration: none;
+  color: inherit;
+  font-style: normal;
+
+  transition-duration: $tr-dur;
+  transition-timing-function: $tr-t-f;
+
+  &:hover,
+  &:focus {
+    color: $accent-color;
+  }
+}

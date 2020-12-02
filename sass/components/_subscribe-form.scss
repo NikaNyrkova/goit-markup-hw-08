@@ -1,0 +1,82 @@
+.subscribe-container {
+  margin-left: 93px;
+}
+
+.subscribe-input {
+  width: 358px;
+  height: 50px;
+  border: 1px solid rgba(255, 255, 255, 0.3);
+  border-radius: 4px;
+  filter: drop-shadow(0px 4px 4px rgba(0, 0, 0, 0.15));
+  background-color: $dark-bg;
+  padding-left: 16px;
+
+  font-size: 16px;
+  line-height: 1, 25;
+  align-items: center;
+  letter-spacing: 0.03em;
+  color: rgba(255, 255, 255, 0.6);
+
+  transition-duration: $tr-dur;
+  transition-timing-function: $tr-t-f;
+
+  &:not(:placeholder-shown) {
+    border-color: $white;
+    color: $white;
+  }
+}
+
+.subscribe-input:-webkit-autofill,
+.subscribe-input:-webkit-autofill:hover,
+.subscribe-input:-webkit-autofill:focus {
+  -webkit-text-fill-color: $white;
+  -webkit-box-shadow: 0 0 0px 1000px $dark-bg inset;
+}
+
+.subscribe-btn {
+  display: inline-flex;
+  justify-content: center;
+  width: 200px;
+  height: 50px;
+  margin-left: 12px;
+
+  font-family: inherit;
+  font-weight: 700;
+  font-size: 16px;
+  line-height: 1.87;
+  align-items: center;
+  text-align: center;
+  letter-spacing: 0.06em;
+  color: $white;
+
+  background-color: $accent-color;
+  border: 1px solid transparent;
+  box-shadow: 0px 4px 4px rgba(0, 0, 0, 0.15);
+  border-radius: 4px;
+
+  transition-duration: $tr-dur;
+  transition-timing-function: $tr-t-f;
+
+  &:hover,
+  &:focus {
+    cursor: pointer;
+    color: $accent-color;
+    background-color: $white;
+  }
+}
+
+.subscribe-send-svg {
+  width: 24px;
+  height: 24px;
+  fill: $white;
+
+  margin-left: 10px;
+
+  transition-duration: $tr-dur;
+  transition-timing-function: $tr-t-f;
+
+  .subscribe-btn:hover &,
+  .subscribe-btn:focus & {
+    fill: $accent-color;
+  }
+}
