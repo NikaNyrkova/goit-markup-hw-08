@@ -160,10 +160,11 @@ header {
   list-style-type: none;
   padding-left: 0px;
   margin-top: 0px;
+  margin-right: -8px;
   margin-bottom: 50px;
 }
 
-.list-btn-filtr .item:not(:last-child) {
+.list-btn-filtr .item {
   margin-right: 8px;
 }
 

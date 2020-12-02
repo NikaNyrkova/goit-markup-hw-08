@@ -13,9 +13,10 @@ header {
   list-style-type: none;
   padding-left: 0px;
   margin-top: 0px;
+  margin-right: -8px;
   margin-bottom: 50px;
 
-  .item:not(:last-child) {
+  .item {
     margin-right: 8px;
   }
 }
