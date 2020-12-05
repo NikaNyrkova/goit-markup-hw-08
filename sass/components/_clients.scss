@@ -1,20 +1,22 @@
 .section-clients {
-  padding-top: 95px;
-  padding-bottom: 95px;
+  padding-top: 60px;
+  padding-bottom: 60px;
 }
 
 .clients-icons {
   display: flex;
+  flex-wrap: wrap;
   justify-content: center;
   list-style-type: none;
   padding-left: 0px;
   margin-top: 0px;
-  margin-bottom: 0px;
+  margin-bottom: -30px;
   margin-right: -30px;
 }
 
 .clients-icons-item {
   margin-right: 30px;
+  margin-bottom: 30px;
 }
 
 .clients-icons-link {

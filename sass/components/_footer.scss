@@ -6,12 +6,14 @@
 
 .footer-container {
   display: flex;
-  align-items: baseline;
+  flex-direction: column;
+  align-items: center;
   justify-content: space-between;
 }
 
 .link-logo-footer {
   display: block;
+  text-align: center;
   margin-bottom: 20px;
 }
 
@@ -24,21 +26,23 @@
   margin-bottom: 0px;
   padding-left: 0px;
   list-style-type: none;
+  margin-bottom: -9px;
 
-  .item:not(:last-child) {
+  .item {
     margin-bottom: 9px;
+    text-align: center;
   }
 }
 
 .footer-social-link {
   display: flex;
+  justify-content: center;
   flex-wrap: wrap;
   width: 206px;
   height: 80px;
-  margin-left: 70px;
+  margin-top: 60px;
 }
-
-%title-plus {
+.title-plus {
   margin-top: 0px;
   margin-bottom: 10px;
   font-weight: 700;
@@ -46,10 +50,11 @@
   line-height: 1.14;
   text-transform: uppercase;
   color: $title-color;
+
+  text-align: center;
 }
 
 .title-plus-foot {
-  @extend %title-plus;
   margin-bottom: 20px;
   color: $white;
 }

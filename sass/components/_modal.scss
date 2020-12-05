@@ -3,8 +3,8 @@
   top: 50%;
   left: 50%;
 
-  min-width: 528px;
-  min-height: 580px;
+  width: 450px;
+  height: auto;
 
   background-color: $white;
 
@@ -47,13 +47,17 @@
 }
 
 .modal-caption {
+  display: block;
+  width: 370px;
+
   margin-top: 40px;
   margin-left: auto;
   margin-right: auto;
 
   font-weight: 700;
   font-size: 20px;
-  line-height: 1.15;
+  line-height: 1.5;
+  // line-height: 1.15;
   text-align: center;
   letter-spacing: 0.03em;
 
@@ -61,7 +65,7 @@
 }
 
 .modal-form {
-  max-width: 448px;
+  max-width: 370px;
   margin-left: auto;
   margin-right: auto;
 }
@@ -161,6 +165,11 @@
   display: flex;
   align-items: center;
   justify-content: center;
+
+  font-style: 400;
+  font-weight: 400;
+  font-size: 12px;
+  line-height: 1.16;
 }
 
 .checkbox {
@@ -176,7 +185,7 @@
   border: 2px solid #212121;
   border-radius: 2px;
 
-  margin-right: 9px;
+  margin-right: 8px;
 }
 
 .checkbox:checked + .check-icon {
@@ -192,10 +201,11 @@
 }
 
 .check-icon + a {
-  margin-left: 6px;
+  margin-left: 3px;
 }
 
 .btn-send {
   display: flex;
   justify-content: center;
+  margin-bottom: 40px;
 }
