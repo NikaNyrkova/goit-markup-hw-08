@@ -1,9 +1,7 @@
 .container-title {
   padding-bottom: 95px;
-}
 
-@media screen and (max-width: 1200px) {
-  .container-title {
+  @media (max-width: 1200px) {
     display: none;
   }
 }
@@ -18,6 +16,10 @@
   text-align: center;
   letter-spacing: 0.03em;
   color: $title-color;
+
+  @include for-size(desktop) {
+    font-size: 36px;
+  }
 }
 
 .list-section-title {
@@ -35,6 +37,17 @@
   &:not(:last-child) {
     margin-right: 30px;
   }
+}
+
+.title-plus-work {
+  margin-top: 0px;
+  font-weight: 700;
+  font-size: 14px;
+  line-height: 1.14;
+  text-transform: uppercase;
+  color: $white;
+
+  text-align: center;
 }
 
 .label {

@@ -16,6 +16,20 @@
   background-repeat: no-repeat;
   background-position: center;
   background-size: cover;
+
+  @include for-size(mobile) {
+    max-width: 480px;
+  }
+
+  @include for-size(tablet) {
+    max-width: 768px;
+  }
+
+  @include for-size(desktop) {
+    max-width: 1200px;
+    height: 600px;
+    padding-top: 200px;
+  }
 }
 
 .hero-title {
@@ -30,6 +44,20 @@
   letter-spacing: 0.06em;
   text-transform: uppercase;
   color: $white;
+
+  @include for-size(mobile) {
+    width: 360px;
+  }
+
+  @include for-size(tablet) {
+    width: 360px;
+  }
+
+  @include for-size(desktop) {
+    width: 696px;
+    font-size: 44px;
+    line-height: 1.36;
+  }
 }
 
 .btn {

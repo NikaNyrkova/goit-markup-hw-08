@@ -23,7 +23,7 @@
   display: inline-flex;
   justify-content: center;
   align-items: center;
-  width: 170px;
+  width: 210px;
   height: 90px;
   border: 1px solid #afb1b8;
   box-sizing: border-box;
@@ -35,6 +35,14 @@
   &:hover,
   &:focus {
     border-color: $accent-color;
+  }
+
+  @include for-size(tablet) {
+    width: 226px;
+  }
+
+  @include for-size(desktop) {
+    width: 170px;
   }
 }
 

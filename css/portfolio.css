@@ -6,6 +6,7 @@ html {
 *::before,
 *::after {
   box-sizing: inherit;
+  outline: 2px solid tomato;
 }
 
 body {
@@ -22,6 +23,24 @@ body {
   padding-right: 15px;
   margin-left: auto;
   margin-right: auto;
+}
+
+@media (min-width: 480px) {
+  .container {
+    width: 480px;
+  }
+}
+
+@media (min-width: 768px) {
+  .container {
+    width: 768px;
+  }
+}
+
+@media (min-width: 1200px) {
+  .container {
+    width: 1200px;
+  }
 }
 
 .image-block {
@@ -336,13 +355,27 @@ header {
   display: flex;
   flex-direction: column;
   align-items: center;
-  justify-content: space-between;
+}
+
+@media (min-width: 768px) {
+  .footer-container {
+    flex-direction: row;
+    flex-wrap: wrap;
+    align-items: baseline;
+    justify-content: space-around;
+  }
 }
 
 .link-logo-footer {
   display: block;
   text-align: center;
   margin-bottom: 20px;
+}
+
+@media (min-width: 768px) {
+  .link-logo-footer {
+    margin-bottom: 0;
+  }
 }
 
 .address {
@@ -369,6 +402,12 @@ header {
   width: 206px;
   height: 80px;
   margin-top: 60px;
+}
+
+@media (min-width: 768px) {
+  .footer-social-link {
+    margin-top: 0;
+  }
 }
 
 .title-plus {
@@ -400,10 +439,26 @@ header {
   margin-top: 60px;
 }
 
+@media (min-width: 1200px) {
+  .subscribe-container {
+    width: 570px;
+    margin-top: 0;
+  }
+}
+
 .subscribe {
   display: flex;
   flex-direction: column;
   align-items: center;
+}
+
+@media (min-width: 1200px) {
+  .subscribe {
+    flex-direction: row;
+    flex-wrap: wrap;
+    justify-content: space-between;
+    align-items: flex-start;
+  }
 }
 
 .subscribe-input {
@@ -427,6 +482,18 @@ header {
 .subscribe-input:not(:placeholder-shown) {
   border-color: #ffffff;
   color: #ffffff;
+}
+
+@media (min-width: 768px) {
+  .subscribe-input {
+    width: 450px;
+  }
+}
+
+@media (min-width: 1200px) {
+  .subscribe-input {
+    width: 358px;
+  }
 }
 
 .subscribe-input:-webkit-autofill,

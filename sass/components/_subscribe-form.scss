@@ -1,12 +1,24 @@
 .subscribe-container {
   width: 100%;
   margin-top: 60px;
+
+  @include for-size(desktop) {
+    width: 570px;
+    margin-top: 0;
+  }
 }
 
 .subscribe {
   display: flex;
   flex-direction: column;
   align-items: center;
+
+  @include for-size(desktop) {
+    flex-direction: row;
+    flex-wrap: wrap;
+    justify-content: space-between;
+    align-items: flex-start;
+  }
 }
 
 .subscribe-input {
@@ -31,6 +43,14 @@
   &:not(:placeholder-shown) {
     border-color: $white;
     color: $white;
+  }
+
+  @include for-size(tablet) {
+    width: 450px;
+  }
+
+  @include for-size(desktop) {
+    width: 358px;
   }
 }
 
