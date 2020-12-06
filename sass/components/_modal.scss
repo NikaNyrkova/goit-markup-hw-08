@@ -3,13 +3,18 @@
   top: 50%;
   left: 50%;
 
-  width: 450px;
+  max-width: 450px;
+  width: 100%;
   height: auto;
 
   background-color: $white;
 
   transform: translate(-50%, -50%) scale(1);
   transition: transform 0.5s ease-in;
+
+  @include for-size(desktop) {
+    max-width: 528px;
+  }
 }
 
 .close-btn {
@@ -48,7 +53,7 @@
 
 .modal-caption {
   display: block;
-  width: 370px;
+  max-width: 370px;
 
   margin-top: 40px;
   margin-left: auto;
@@ -62,12 +67,20 @@
   letter-spacing: 0.03em;
 
   color: #212121;
+
+  @include for-size(desktop) {
+    max-width: 100%;
+  }
 }
 
 .modal-form {
   max-width: 370px;
   margin-left: auto;
   margin-right: auto;
+
+  @include for-size(desktop) {
+    max-width: 448px;
+  }
 }
 
 .form-field {

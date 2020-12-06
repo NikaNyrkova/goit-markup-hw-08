@@ -1,6 +1,11 @@
 .section-clients {
   padding-top: 60px;
   padding-bottom: 60px;
+
+  @include for-size(desktop) {
+    padding-top: 95px;
+    padding-bottom: 95px;
+  }
 }
 
 .clients-icons {
