@@ -7,7 +7,6 @@ html {
 *::before,
 *::after {
   box-sizing: inherit;
-  outline: 2px solid tomato;
 }
 
 body {
@@ -65,7 +64,6 @@ body {
   display: block;
   padding-top: 25px;
   padding-bottom: 25px;
-  margin-right: 95px;
 }
 
 .logo {
@@ -135,6 +133,12 @@ body {
     display: block;
     text-align: center;
   }
+  .link-nav {
+    font-size: 18px;
+  }
+  .link-header {
+    font-size: 18px;
+  }
   .header-contacts {
     display: flex;
     flex-direction: column;
@@ -142,6 +146,28 @@ body {
   }
   .header-contacts .link-header + .link-header {
     margin-top: 16px;
+  }
+}
+
+@media (min-width: 768px) {
+  .menu-button-mobile {
+    display: none;
+  }
+}
+
+@media (min-width: 768px) {
+  .nave-header {
+    display: flex;
+    justify-content: space-between;
+  }
+  .menu-container-mobile {
+    display: flex;
+  }
+  .header-contacts {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    margin-left: 84px;
   }
 }
 
@@ -154,6 +180,15 @@ body {
   line-height: 1.14;
   letter-spacing: 0.02em;
   list-style-type: none;
+}
+
+@media (min-width: 768px) {
+  .link-nav-menu {
+    display: flex;
+  }
+  .link-nav-menu .item:not(:last-child) {
+    margin-right: 50px;
+  }
 }
 
 .link-nav {
@@ -188,6 +223,26 @@ body {
 @media (min-width: 768px) {
   .current::after {
     bottom: 0;
+  }
+}
+
+@media (min-width: 1200px) {
+  .header-contacts {
+    flex-direction: row;
+    align-items: center;
+    margin-left: 305px;
+  }
+}
+
+@media (max-width: 1199px) {
+  .header-contacts .link-header + .link-header {
+    margin-top: 10px;
+  }
+}
+
+@media (min-width: 1200px) {
+  .header-contacts .link-header + .link-header {
+    margin-left: 30px;
   }
 }
 
@@ -634,6 +689,12 @@ body {
   margin-right: -30px;
 }
 
+@media (min-width: 1200px) {
+  .clients-icons {
+    flex-wrap: nowrap;
+  }
+}
+
 .clients-icons-item {
   display: inline-flex;
   margin-right: 30px;
@@ -655,14 +716,14 @@ body {
 }
 
 @media (min-width: 768px) {
-  .clients-icons-item:hover, .clients-icons-item:focus {
+  .clients-icons-item {
     max-width: 226px;
     width: calc(100% / 3 - 30px);
   }
 }
 
 @media (min-width: 1200px) {
-  .clients-icons-item:hover, .clients-icons-item:focus {
+  .clients-icons-item {
     max-width: 170px;
     width: calc(100% / 6 - 30px);
   }
