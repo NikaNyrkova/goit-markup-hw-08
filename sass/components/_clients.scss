@@ -20,15 +20,13 @@
 }
 
 .clients-icons-item {
+  display: inline-flex;
   margin-right: 30px;
   margin-bottom: 30px;
-}
-
-.clients-icons-link {
-  display: inline-flex;
   justify-content: center;
   align-items: center;
-  width: 210px;
+  max-width: 210px;
+  width: calc(100% / 2 - 30px);
   height: 90px;
   border: 1px solid #afb1b8;
   box-sizing: border-box;
@@ -40,14 +38,16 @@
   &:hover,
   &:focus {
     border-color: $accent-color;
-  }
 
-  @include for-size(tablet) {
-    width: 226px;
-  }
+    @include for-size(tablet) {
+      max-width: 226px;
+      width: calc(100% / 3 - 30px);
+    }
 
-  @include for-size(desktop) {
-    width: 170px;
+    @include for-size(desktop) {
+      max-width: 170px;
+      width: calc(100% / 6 - 30px);
+    }
   }
 }
 

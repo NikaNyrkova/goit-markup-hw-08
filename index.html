@@ -11,20 +11,26 @@
   </head>
 
   <body>
-    <!-- <header>
-      <div class="container main-nav">
+     <header class="main-nav">
+      <div class="container">
         <nav class="nave-header">
           <a href="./" class="link link-logo">
             <span class="logo web">Web</span>
             <span class="logo studio">Studio</span>
           </a>
-          <ul class="link-nav-menu">
+          <button type="button" class="menu-button-mobile" aria-expanded="false" aria-controls="menu-container-mobile" data-menu-button>
+            <svg width="40" height="40" aria-label="Переключатель мобильного меню">
+              <use class="icon-menu-mobile" href="./images/modal-icon/sprite-modal.svg#menu"></use>
+              <use class="icon-close-mobile" href="./images/modal-icon/sprite-modal.svg#close-menu"></use>
+            </svg>
+          </button>
+          <div class="menu-container-mobile" data-menu>
+            <ul class="link-nav-menu">
             <li class="item"><a href="" class="link link-nav current">Студия</a></li>
             <li class="item"><a href="./portfolio.html" class="link link-nav">Портфолио</a></li>
             <li class="item"><a href="#contacts" class="link link-nav">Контакты</a></li>
-          </ul>
-        </nav>
-        <div class="header-contacts">
+            </ul>
+            <div class="header-contacts">
           <a href="mailto:info@devstudio.com" class="link link-header">
             <svg class="link-header-svg" width=16 height=12>
               <use href="./images/icon/sprite.svg#envelope"></use>
@@ -35,9 +41,12 @@
               <use href="./images/icon/sprite.svg#smartphone"></use>
             </svg>
             +38 096 111 11 11</a>
-        </div>
+            </div>
+          </div>
+        </nav>
       </div>
-    </header> -->
+      
+    </header>
 
     <main>
       <section class="section-hero">
@@ -456,5 +465,6 @@
     </div>
     
   <script src="./js/modal.js"></script>
+  <script src="./js/menu.js"></script>
   </body>
 </html>

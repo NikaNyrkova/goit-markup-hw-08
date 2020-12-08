@@ -1,0 +1,58 @@
+@include for-size(mobile-only) {
+  .main-nav {
+    position: relative;
+  }
+
+  .nave-header {
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+  }
+
+  .menu-button-mobile {
+    display: inline-flex;
+    padding: 0;
+    margin: 0;
+    border: none;
+    background-color: transparent;
+  }
+
+  .menu-button-mobile .icon-close-mobile {
+    display: none;
+  }
+
+  .menu-button-mobile.is-open .icon-close-mobile {
+    display: block;
+  }
+
+  .menu-button-mobile.is-open .icon-menu-mobile {
+    display: none;
+  }
+
+  .menu-container-mobile {
+    display: none;
+    position: absolute;
+    top: 100%;
+    left: 0;
+    right: 0;
+    background-color: $white;
+    padding-top: 60px;
+    padding-bottom: 60px;
+    z-index: 5;
+
+    &.is-open {
+      display: block;
+      text-align: center;
+    }
+  }
+
+  .header-contacts {
+    display: flex;
+    flex-direction: column;
+    margin-top: 20px;
+  }
+
+  .header-contacts .link-header + .link-header {
+    margin-top: 16px;
+  }
+}
