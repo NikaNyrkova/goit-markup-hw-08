@@ -515,6 +515,7 @@ header {
 
 @media (min-width: 1200px) {
   .footer-container {
+    align-items: baseline;
     justify-content: space-between;
   }
 }
@@ -525,9 +526,9 @@ header {
   margin-bottom: 20px;
 }
 
-@media (min-width: 768px) {
+@media (min-width: 1200px) {
   .link-logo-footer {
-    margin-bottom: 0;
+    text-align: start;
   }
 }
 
@@ -548,6 +549,12 @@ header {
   text-align: center;
 }
 
+@media (min-width: 1200px) {
+  .list-contacts .item {
+    text-align: start;
+  }
+}
+
 .footer-social-link {
   display: flex;
   justify-content: center;
@@ -563,6 +570,12 @@ header {
   }
 }
 
+@media (min-width: 1200px) {
+  .footer-social-link {
+    justify-content: start;
+  }
+}
+
 .title-plus {
   margin-top: 0px;
   margin-bottom: 10px;
@@ -571,7 +584,12 @@ header {
   line-height: 1.14;
   text-transform: uppercase;
   color: #212121;
-  text-align: center;
+}
+
+@media (max-width: 1199px) {
+  .title-plus {
+    text-align: center;
+  }
 }
 
 .title-plus-foot {

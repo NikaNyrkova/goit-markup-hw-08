@@ -22,6 +22,7 @@
   }
 
   @include for-size(desktop) {
+    align-items: baseline;
     justify-content: space-between;
   }
 }
@@ -31,8 +32,8 @@
   text-align: center;
   margin-bottom: 20px;
 
-  @include for-size(tablet) {
-    margin-bottom: 0;
+  @include for-size(desktop) {
+    text-align: start;
   }
 }
 
@@ -50,6 +51,10 @@
   .item {
     margin-bottom: 9px;
     text-align: center;
+
+    @include for-size(desktop) {
+      text-align: start;
+    }
   }
 }
 
@@ -64,6 +69,10 @@
   @include for-size(tablet) {
     margin-top: 0;
   }
+
+  @include for-size(desktop) {
+    justify-content: start;
+  }
 }
 .title-plus {
   margin-top: 0px;
@@ -74,7 +83,9 @@
   text-transform: uppercase;
   color: $title-color;
 
-  text-align: center;
+  @media (max-width: 1199px) {
+    text-align: center;
+  }
 }
 
 .title-plus-foot {

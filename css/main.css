@@ -479,7 +479,12 @@ body {
   line-height: 1.14;
   text-transform: uppercase;
   color: #212121;
-  text-align: center;
+}
+
+@media (max-width: 1199px) {
+  .title-plus {
+    text-align: center;
+  }
 }
 
 .container-title {
@@ -686,7 +691,6 @@ body {
   padding-left: 0px;
   margin-top: 0px;
   margin-bottom: -30px;
-  margin-right: -30px;
 }
 
 @media (min-width: 1200px) {
@@ -697,7 +701,6 @@ body {
 
 .clients-icons-item {
   display: inline-flex;
-  margin-right: 30px;
   margin-bottom: 30px;
   justify-content: center;
   align-items: center;
@@ -715,10 +718,20 @@ body {
   border-color: #2196f3;
 }
 
+@media (max-width: 767px) {
+  .clients-icons-item:nth-child(2n + 1) {
+    margin-right: 30px;
+  }
+}
+
 @media (min-width: 768px) {
   .clients-icons-item {
     max-width: 226px;
     width: calc(100% / 3 - 30px);
+    margin-right: 30px;
+  }
+  .clients-icons-item:nth-child(3n + 3) {
+    margin-right: 0;
   }
 }
 
@@ -726,6 +739,9 @@ body {
   .clients-icons-item {
     max-width: 170px;
     width: calc(100% / 6 - 30px);
+  }
+  .clients-icons-item:not(:last-child) {
+    margin-right: 30px;
   }
 }
 
@@ -770,6 +786,7 @@ body {
 
 @media (min-width: 1200px) {
   .footer-container {
+    align-items: baseline;
     justify-content: space-between;
   }
 }
@@ -780,9 +797,9 @@ body {
   margin-bottom: 20px;
 }
 
-@media (min-width: 768px) {
+@media (min-width: 1200px) {
   .link-logo-footer {
-    margin-bottom: 0;
+    text-align: start;
   }
 }
 
@@ -803,6 +820,12 @@ body {
   text-align: center;
 }
 
+@media (min-width: 1200px) {
+  .list-contacts .item {
+    text-align: start;
+  }
+}
+
 .footer-social-link {
   display: flex;
   justify-content: center;
@@ -818,6 +841,12 @@ body {
   }
 }
 
+@media (min-width: 1200px) {
+  .footer-social-link {
+    justify-content: start;
+  }
+}
+
 .title-plus {
   margin-top: 0px;
   margin-bottom: 10px;
@@ -826,7 +855,12 @@ body {
   line-height: 1.14;
   text-transform: uppercase;
   color: #212121;
-  text-align: center;
+}
+
+@media (max-width: 1199px) {
+  .title-plus {
+    text-align: center;
+  }
 }
 
 .title-plus-foot {
@@ -981,6 +1015,8 @@ body {
   left: 50%;
   width: 100%;
   height: auto;
+  padding-left: 40px;
+  padding-right: 40px;
   background-color: #ffffff;
   transform: translate(-50%, -50%) scale(1);
   transition: transform 0.5s ease-in;
